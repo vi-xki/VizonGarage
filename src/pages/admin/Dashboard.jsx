@@ -44,10 +44,10 @@ const Dashboard = () => {
     setOrders(allOrders.sort((a, b) => b.id - a.id));
   }, [navigate]);
 
-  const handleLogout = () => {
-    localStorage.removeItem('adminUser');
-    navigate('/admin/login');
-  };
+  // const handleLogout = () => {
+  //   localStorage.removeItem('adminUser');
+  //   navigate('/admin/login');
+  // };
 
   const updateLoginTime = () => {
     const adminUser = JSON.parse(localStorage.getItem('adminUser'));

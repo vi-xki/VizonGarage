@@ -6,7 +6,7 @@ const AdminLogin = () => {
   const navigate = useNavigate();
   const [pin, setPin] = useState('');
   const [error, setError] = useState('');
-  const ADMIN_PIN = '9256';
+  const ADMIN_PIN = '9832';
 
   const handlePinChange = (e) => {
     const value = e.target.value;
