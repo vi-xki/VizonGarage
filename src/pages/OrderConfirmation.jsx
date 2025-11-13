@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useLocation, useNavigate, Link } from 'react-router-dom';
 import { usePDF } from 'react-to-pdf';
 import '../styles/OrderConfirmation.css';
@@ -7,7 +7,6 @@ const OrderConfirmation = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const order = location.state?.order;
-  const contentRef = useRef();
   const { toPDF, targetRef } = usePDF({filename: `order-${order?.id}.pdf`});
 
   if (!order) {
